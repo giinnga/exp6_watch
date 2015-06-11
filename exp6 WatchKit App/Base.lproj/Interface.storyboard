@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W4o-GC-tWA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
@@ -12,19 +12,28 @@
                     <items>
                         <group height="1" alignment="left" layout="vertical" id="YuE-eN-tYu">
                             <items>
-                                <group width="1" height="100" alignment="left" id="CEi-vU-bjJ">
+                                <group width="1" height="39" alignment="left" id="CEi-vU-bjJ">
                                     <items>
                                         <button width="42" alignment="left" title="+1" id="80Y-bH-ggB">
                                             <variation key="device=watch38mm" width="44"/>
                                             <variation key="device=watch42mm" width="50"/>
+                                            <connections>
+                                                <action selector="oneMore" destination="AgC-eL-Hgc" id="8m5-yW-Zg9"/>
+                                            </connections>
                                         </button>
                                         <button width="42" alignment="left" title="+5" id="MkF-zQ-q8u">
                                             <variation key="device=watch38mm" width="44"/>
                                             <variation key="device=watch42mm" width="50"/>
+                                            <connections>
+                                                <action selector="fiveMore" destination="AgC-eL-Hgc" id="zGZ-e3-pcy"/>
+                                            </connections>
                                         </button>
                                         <button width="47" alignment="left" title="+10" id="x3R-nr-BLR">
                                             <variation key="device=watch38mm" width="44"/>
                                             <variation key="device=watch42mm" width="50"/>
+                                            <connections>
+                                                <action selector="tenMore" destination="AgC-eL-Hgc" id="YR4-CN-wQo"/>
+                                            </connections>
                                         </button>
                                     </items>
                                     <variation key="device=watch38mm" height="41"/>
@@ -33,9 +42,9 @@
                                 <group width="1" alignment="left" verticalAlignment="center" id="ji2-Bj-lZY">
                                     <items>
                                         <label alignment="center" text="$" textAlignment="left" id="cHu-7n-3G8"/>
-                                        <label alignment="center" text="100" textAlignment="left" id="24C-1c-qTa"/>
+                                        <label alignment="center" text="0" textAlignment="left" id="24C-1c-qTa"/>
                                         <label alignment="center" text="," textAlignment="left" id="4yK-Xt-NTs"/>
-                                        <label alignment="center" text="10" textAlignment="left" id="6w6-gT-jM4"/>
+                                        <label alignment="center" text="00" textAlignment="left" id="6w6-gT-jM4"/>
                                     </items>
                                 </group>
                                 <group width="1" alignment="left" verticalAlignment="bottom" id="wT9-13-5YG">
@@ -43,21 +52,30 @@
                                         <button width="42" alignment="left" title="-1" id="vPK-pB-odL">
                                             <variation key="device=watch38mm" width="44"/>
                                             <variation key="device=watch42mm" width="50"/>
+                                            <connections>
+                                                <action selector="oneLess" destination="AgC-eL-Hgc" id="9pt-IZ-m3X"/>
+                                            </connections>
                                         </button>
                                         <button width="42" alignment="left" title="-5" id="Gut-2a-SAn">
                                             <variation key="device=watch38mm" width="44"/>
                                             <variation key="device=watch42mm" width="50"/>
+                                            <connections>
+                                                <action selector="fiveLess" destination="AgC-eL-Hgc" id="kta-4B-j2z"/>
+                                            </connections>
                                         </button>
                                         <button width="47" alignment="left" title="-10" id="BtX-UM-dgk">
                                             <variation key="device=watch38mm" width="44"/>
                                             <variation key="device=watch42mm" width="50"/>
+                                            <connections>
+                                                <action selector="tenLess" destination="AgC-eL-Hgc" id="3pa-6m-y2v"/>
+                                            </connections>
                                         </button>
                                     </items>
-                                    <variation key="default">
+                                    <variation key="device=watch38mm">
                                         <mask key="items">
-                                            <exclude reference="vPK-pB-odL"/>
-                                            <exclude reference="Gut-2a-SAn"/>
-                                            <exclude reference="BtX-UM-dgk"/>
+                                            <include reference="vPK-pB-odL"/>
+                                            <include reference="Gut-2a-SAn"/>
+                                            <include reference="BtX-UM-dgk"/>
                                         </mask>
                                     </variation>
                                     <variation key="device=watch42mm">
@@ -71,9 +89,49 @@
                             </items>
                         </group>
                     </items>
+                    <menu key="menu" id="mwW-jz-zEb">
+                        <items>
+                            <menuItem title="Dolar" icon="more" id="HyO-cS-H5t">
+                                <connections>
+                                    <action selector="changeDolar" destination="AgC-eL-Hgc" id="5qc-QE-hWI"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Cents" icon="more" id="m4a-hA-oSn">
+                                <connections>
+                                    <action selector="changeCents" destination="AgC-eL-Hgc" id="bH0-6F-54e"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="centsLabel" destination="6w6-gT-jM4" id="HXb-QW-zXB"/>
+                        <outlet property="dolarLabel" destination="24C-1c-qTa" id="Tuu-Tr-rWq"/>
+                    </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="233.64102564102566" y="345.66666666666669"/>
+            <point key="canvasLocation" x="233" y="345"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Dyu-mH-1Kq">
+            <objects>
+                <controller id="W4o-GC-tWA">
+                    <items>
+                        <group width="1" alignment="left" id="Syv-mm-bn0">
+                            <items>
+                                <imageView width="52" height="79" alignment="left" image="logo" id="v92-Bx-Fup"/>
+                                <label alignment="left" verticalAlignment="bottom" text="You have:" id="Ve1-dT-K3f"/>
+                            </items>
+                        </group>
+                        <label width="136" height="68" alignment="left" text="$0,00" id="Kdz-fd-kxh">
+                            <fontDescription key="font" type="system" pointSize="34"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <segue destination="AgC-eL-Hgc" kind="relationship" relationship="nextPage" id="ebH-Vz-ZYd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="8" y="345"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
