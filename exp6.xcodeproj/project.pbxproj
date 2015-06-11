@@ -22,6 +22,7 @@
 		9488802C1B292190004E5D93 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9488802A1B292190004E5D93 /* Interface.storyboard */; };
 		9488802E1B292190004E5D93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9488802D1B292190004E5D93 /* Images.xcassets */; };
 		948880311B292190004E5D93 /* exp6 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 948880141B29218F004E5D93 /* exp6 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		94B4D1331B29FA86006D81D1 /* UserValues.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94B4D1321B29FA86006D81D1 /* UserValues.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		948880291B292190004E5D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9488802B1B292190004E5D93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		9488802D1B292190004E5D93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		94B4D1321B29FA86006D81D1 /* UserValues.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UserValues.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				948880161B29218F004E5D93 /* Supporting Files */,
 				3A53F1CD1B29CF1F0011FFFB /* FirstController.swift */,
 				948880191B29218F004E5D93 /* SecondController.swift */,
+				94B4D1321B29FA86006D81D1 /* UserValues.plist */,
 			);
 			path = "exp6 WatchKit Extension";
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 			files = (
 				948880201B292190004E5D93 /* Images.xcassets in Resources */,
 				948880241B292190004E5D93 /* exp6 WatchKit App.app in Resources */,
+				94B4D1331B29FA86006D81D1 /* UserValues.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
