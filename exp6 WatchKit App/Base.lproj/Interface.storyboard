@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W4o-GC-tWA">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W4o-GC-tWA">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Second Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="exp6_WatchKit_App" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="SecondController" customModule="exp6_WatchKit_Extension">
                     <items>
                         <group height="1" alignment="left" layout="vertical" id="YuE-eN-tYu">
                             <items>
@@ -111,10 +111,10 @@
             </objects>
             <point key="canvasLocation" x="233" y="345"/>
         </scene>
-        <!--Interface Controller-->
+        <!--First Controller-->
         <scene sceneID="Dyu-mH-1Kq">
             <objects>
-                <controller id="W4o-GC-tWA">
+                <controller id="W4o-GC-tWA" customClass="FirstController" customModule="exp6_WatchKit_Extension">
                     <items>
                         <group width="1" alignment="left" id="Syv-mm-bn0">
                             <items>
@@ -127,6 +127,7 @@
                         </label>
                     </items>
                     <connections>
+                        <outlet property="totalLabel" destination="Kdz-fd-kxh" id="6Tt-PR-oEv"/>
                         <segue destination="AgC-eL-Hgc" kind="relationship" relationship="nextPage" id="ebH-Vz-ZYd"/>
                     </connections>
                 </controller>

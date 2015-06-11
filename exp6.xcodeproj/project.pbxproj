@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A53F1CE1B29CF1F0011FFFB /* FirstController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A53F1CD1B29CF1F0011FFFB /* FirstController.swift */; };
 		94887FF11B29217B004E5D93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94887FF01B29217B004E5D93 /* AppDelegate.swift */; };
 		94887FF31B29217B004E5D93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94887FF21B29217B004E5D93 /* ViewController.swift */; };
 		94887FF61B29217B004E5D93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94887FF41B29217B004E5D93 /* Main.storyboard */; };
 		94887FF81B29217B004E5D93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94887FF71B29217B004E5D93 /* Images.xcassets */; };
 		94887FFB1B29217B004E5D93 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94887FF91B29217B004E5D93 /* LaunchScreen.xib */; };
 		948880071B29217B004E5D93 /* exp6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948880061B29217B004E5D93 /* exp6Tests.swift */; };
-		9488801A1B29218F004E5D93 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948880191B29218F004E5D93 /* InterfaceController.swift */; };
+		9488801A1B29218F004E5D93 /* SecondController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948880191B29218F004E5D93 /* SecondController.swift */; };
 		9488801C1B292190004E5D93 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9488801B1B29218F004E5D93 /* NotificationController.swift */; };
 		9488801E1B292190004E5D93 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9488801D1B292190004E5D93 /* GlanceController.swift */; };
 		948880201B292190004E5D93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9488801F1B292190004E5D93 /* Images.xcassets */; };
@@ -62,6 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A53F1CD1B29CF1F0011FFFB /* FirstController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstController.swift; sourceTree = "<group>"; };
 		94887FEB1B29217B004E5D93 /* exp6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exp6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94887FEF1B29217B004E5D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94887FF01B29217B004E5D93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,7 +77,7 @@
 		948880141B29218F004E5D93 /* exp6 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "exp6 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		948880171B29218F004E5D93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		948880181B29218F004E5D93 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		948880191B29218F004E5D93 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		948880191B29218F004E5D93 /* SecondController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondController.swift; sourceTree = "<group>"; };
 		9488801B1B29218F004E5D93 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		9488801D1B292190004E5D93 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
 		9488801F1B292190004E5D93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -173,11 +175,12 @@
 		948880151B29218F004E5D93 /* exp6 WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				948880191B29218F004E5D93 /* InterfaceController.swift */,
 				9488801B1B29218F004E5D93 /* NotificationController.swift */,
 				9488801D1B292190004E5D93 /* GlanceController.swift */,
 				9488801F1B292190004E5D93 /* Images.xcassets */,
 				948880161B29218F004E5D93 /* Supporting Files */,
+				3A53F1CD1B29CF1F0011FFFB /* FirstController.swift */,
+				948880191B29218F004E5D93 /* SecondController.swift */,
 			);
 			path = "exp6 WatchKit Extension";
 			sourceTree = "<group>";
@@ -387,8 +390,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A53F1CE1B29CF1F0011FFFB /* FirstController.swift in Sources */,
 				9488801C1B292190004E5D93 /* NotificationController.swift in Sources */,
-				9488801A1B29218F004E5D93 /* InterfaceController.swift in Sources */,
+				9488801A1B29218F004E5D93 /* SecondController.swift in Sources */,
 				9488801E1B292190004E5D93 /* GlanceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -651,6 +655,7 @@
 				9488800C1B29217B004E5D93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9488800D1B29217B004E5D93 /* Build configuration list for PBXNativeTarget "exp6Tests" */ = {
 			isa = XCConfigurationList;
@@ -659,6 +664,7 @@
 				9488800F1B29217B004E5D93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		948880321B292190004E5D93 /* Build configuration list for PBXNativeTarget "exp6 WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -667,6 +673,7 @@
 				948880341B292190004E5D93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		948880351B292190004E5D93 /* Build configuration list for PBXNativeTarget "exp6 WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -675,6 +682,7 @@
 				948880371B292190004E5D93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
